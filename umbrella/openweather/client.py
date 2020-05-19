@@ -6,7 +6,7 @@ import settings
 from ..http import BaseHttpCall
 
 
-class DailyForecast(BaseHttpCall):
+class DailyForecastCall(BaseHttpCall):
 
     DAILY_FORECAST_PATH = "/data/2.5/onecall?lat={}&lon={}&exclude=minutely,hourly&appid={}"
 

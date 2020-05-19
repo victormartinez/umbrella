@@ -1,16 +1,16 @@
 from .service import UmbrellaService
 from .ui import ReportPrinter
-from .openweather.client import DailyForecast
+from .openweather.client import DailyForecastCall
 from .openweather.serializers import ForecastSchema
 
 
 def execute(coords):
-    success, data = DailyForecast(coords).run()
+    success, data = DailyForecastCall(coords).run()
     if not success:
         print(data["message"])
         return
 
-    forecasts = ForecastSchema(many=True).load(data["daily"])
+    forecasts = ForecastSchema(many=True).load(data["daily"][1:])
     report = UmbrellaService(forecasts).report()
     ReportPrinter(report).print_inline()
 
