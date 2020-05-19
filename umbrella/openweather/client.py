@@ -3,7 +3,7 @@ from urllib.parse import urljoin
 import requests
 
 import settings
-from umbrella.http import BaseHttpCall
+from ..http import BaseHttpCall
 
 
 class DailyForecast(BaseHttpCall):
