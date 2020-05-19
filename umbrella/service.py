@@ -10,8 +10,7 @@ class UmbrellaService:
             {
                 "dt": f["dt"],
                 "humidity": f["humidity"],
-                "umbrella": f["humidity"] > self.HUMIDITY_THRESHOLD
+                "umbrella": f["humidity"] > self.HUMIDITY_THRESHOLD,
             }
             for f in self.forecasts
         ]
-

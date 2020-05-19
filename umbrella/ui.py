@@ -11,9 +11,7 @@ class ReportPrinter:
 
     def print_inline(self):
         umbrella_usage_days = [
-            datetime.strftime(row["dt"], "%A")
-            for row in self.report
-            if row["umbrella"]
+            datetime.strftime(row["dt"], "%A") for row in self.report if row["umbrella"]
         ]
 
         if umbrella_usage_days:

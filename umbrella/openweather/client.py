@@ -8,7 +8,9 @@ from ..http import BaseHttpCall
 
 class DailyForecastCall(BaseHttpCall):
 
-    DAILY_FORECAST_PATH = "/data/2.5/onecall?lat={}&lon={}&exclude=minutely,hourly&appid={}"
+    DAILY_FORECAST_PATH = (
+        "/data/2.5/onecall?lat={}&lon={}&exclude=minutely,hourly&appid={}"
+    )
 
     def __init__(self, coords):
         self.coords = coords

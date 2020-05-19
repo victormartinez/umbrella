@@ -4,7 +4,6 @@ import simplejson
 
 
 class BaseHttpCall(ABC):
-
     @abstractmethod
     def make_call(self):
         pass
