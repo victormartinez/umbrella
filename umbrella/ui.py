@@ -1,3 +1,7 @@
+class ReportPrinter:
 
-def print_report(report):
-    print(report)
+    def __init__(self, report):
+        self.report = report
+
+    def print_inline(self):
+        print(self.report)
