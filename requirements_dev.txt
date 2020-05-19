@@ -1,0 +1,6 @@
+-r requirements.txt
+
+black==19.10b0
+flake8==3.8.1
+ipython==7.14.0
+pytest==5.4.2
