@@ -16,6 +16,6 @@ class ReportPrinter:
 
         if umbrella_usage_days:
             days_str = ", ".join(umbrella_usage_days)
-            print(self.INLINE_TEMPLATE.format(days_str))
+            return self.INLINE_TEMPLATE.format(days_str)
         else:
-            print(self.INLINE_NO_DAYS)
+            return self.INLINE_NO_DAYS

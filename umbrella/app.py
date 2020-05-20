@@ -14,7 +14,8 @@ def execute(coords):
 
     forecasts = ForecastSchema(many=True).load(data["daily"][1:])
     report = UmbrellaService(forecasts).report()
-    ReportPrinter(report).print_inline()
+    message = ReportPrinter(report).print_inline()
+    print(message)
 
 
 if __name__ == "__main__":
