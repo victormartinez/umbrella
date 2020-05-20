@@ -16,7 +16,7 @@ $ pip install -r requirements_dev.txt
 OPEN_WEATHER_API_KEY="YOUR_API_KEY_GOES_HERE" python -m umbrella.app --lat -21.1794579 --lon -47.8726259
 ```
 
-*PS: replace the API KEY with yours.*
+*PS: replace YOUR_API_KEY_GOES_HERE by your Open Weather api key.*
 
 
 ## Makefile
